@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://kit.fontawesome.com/8bf385b8ec.js" crossorigin="anonymous"></script>
+  
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+        * {
+
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        body {
+            /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('nav.jpg'); */
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('j.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            /* border: 10px solid white; */
+            position: absolute;
+            top: 20%;
+            left: 35%;
+            width: 500px;
+            height: 600px;
+        }
+
+        .heading {
+border-bottom: 3px solid #e4a827;
+            font-size: 50px;
+            width: 180px;
+            /* border: 2px solid wheat; */
+            margin: 30px 45px;
+            margin-bottom: 50px;
+            font-family: 'Alatsi', sans-serif;
+        }
+
+        .email {
+            margin: 40px 20px;
+            /* border: 2px solid wheat; */
+            padding: 15px 20px;
+            background: none;
+            outline: none;
+            width: 75%;
+            font-size: 17px;
+            border-style: none;
+            border-bottom: 3px solid #e4a827;
+        }
+
+        .mail>i {
+            position: relative;
+            left: 10px;
+
+
+        }
+
+
+        .password {
+            position: relative;
+            /* border: 2px solid wheat; */
+            margin: 5px 20px;
+          
+            padding: 15px 20px;
+            background: none;
+            border-style: none;
+            width: 75%;
+            border-bottom: 3px solid #e4a827;
+            outline: none;
+            left: 2px;
+            font-size: 17px;
+        }
+
+        .pass>i {
+            position: relative;
+            left: 10px;
+
+        }
+
+        .submit {
+            position: relative;
+            margin: 60px 20px;
+            border: 2px solid #e4a827;
+            left: 19px;
+            width: 20%;
+            background: none;
+            outline: none;
+            padding: 10px 18px;
+            font-size: 20px;
+            transition: all 0.2s ease 0s;
+            border-radius: 20px;
+            
+            /* animation-name: Sharky;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: forwards; */
+            
+
+        }
+        .submit:hover {
+            color: white;
+            background-color: #e4a827;
+
+        }
+       
+            @keyframes Sharky {
+                0%{
+                    left: 0px;
+                    
+                }
+
+                100%{
+                    
+                    left: 335px;
+                    border: 2px solid transparent;
+                    color: transparent; 
+                    background-color: transparent;
+                }
+            }
+
+       
+        
+
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <h1 class="heading">Sign Up</h1>
+        <div class="mail">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="email" class="email" placeholder="Enter Your Email">
+        </div>
+        <div class="pass">
+            <i class="fa fa-unlock"></i>
+
+            <input type="password" name="password" class="password" placeholder="Enter Your Password">
+        </div>
+        <button type="submit" name="submit" class="submit" id="_submit" onclick="slide()">Submit</button>
+    </div>
+</body>
+<script>
+    
+    function slide(){
+        let submit =document.getElementById("_submit")
+        // submit.style.animation="Sharky 1s ease-in 0s 1 normal forwards";
+        submit.style.border="2px solid transparent";
+        submit.style.backgroundColor="transparent";
+        submit.style.color="transparent";
+
+         
+    }
+        // if (submit.style.display!="none"){
+        //     submit.style.display="none";
+        // }
+        // else{
+        //     submit.style.display="block";
+        //     submit.style.animation="Shakry 1s ease-in 0s 1 normal forwards;"
+        
+    // }
+</script>
+</html>
